@@ -17,13 +17,13 @@ public class LightFlicker : MonoBehaviour
 	}
 	void GetNextFlicker()
 	{
-		flicker = Random.Range (0.1f, 0.5f);
+		flicker = Random.Range (0.4f, 0.8f);
 		currIntensity = Random.Range (minIntensity, maxIntensity);
 	}
 	
 	void Update()
 	{
-		light.intensity = Mathf.Lerp (minIntensity, currIntensity, nextTime);
+		light.intensity = Mathf.Lerp (light.intensity, currIntensity, nextTime/flicker);
 
 		nextTime += Time.deltaTime;
 		if (nextTime >= flicker) 
