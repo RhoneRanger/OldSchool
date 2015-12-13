@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: 543e4eb79ddcd3941ac837cf4d5c7c07
+timeCreated: 1449471317
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: entrance
+    100002: //RootNode
+    100004: EntranceC_battlements
+    100006: EntranceTrim
+    100008: EntTurretA
+    100010: EntTurretA_battlements
+    100012: EntTurretB
+    100014: EntTurretB_battlements
+    100016: steps
+    400000: entrance
+    400002: //RootNode
+    400004: EntranceC_battlements
+    400006: EntranceTrim
+    400008: EntTurretA
+    400010: EntTurretA_battlements
+    400012: EntTurretB
+    400014: EntTurretB_battlements
+    400016: steps
+    2300000: entrance
+    2300002: EntranceC_battlements
+    2300004: EntranceTrim
+    2300006: EntTurretA
+    2300008: EntTurretA_battlements
+    2300010: EntTurretB
+    2300012: EntTurretB_battlements
+    2300014: steps
+    3300000: entrance
+    3300002: EntranceC_battlements
+    3300004: EntranceTrim
+    3300006: EntTurretA
+    3300008: EntTurretA_battlements
+    3300010: EntTurretB
+    3300012: EntTurretB_battlements
+    3300014: steps
+    4300000: entrance
+    4300002: EntTurretB
+    4300004: steps
+    4300006: EntTurretB_battlements
+    4300008: EntranceTrim
+    4300010: EntranceC_battlements
+    4300012: EntTurretA
+    4300014: EntTurretA_battlements
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

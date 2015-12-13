@@ -1,3 +1,9 @@
+// Upgrade NOTE: commented out 'float4 unity_LightmapST', a built-in variable
+// Upgrade NOTE: commented out 'sampler2D unity_Lightmap', a built-in variable
+// Upgrade NOTE: commented out 'sampler2D unity_LightmapInd', a built-in variable
+// Upgrade NOTE: replaced tex2D unity_Lightmap with UNITY_SAMPLE_TEX2D
+// Upgrade NOTE: replaced tex2D unity_LightmapInd with UNITY_SAMPLE_TEX2D_SAMPLER
+
 // Shader created with Shader Forge Beta 0.34 
 // Shader Forge (c) Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
@@ -43,10 +49,10 @@ Shader "ManyWorlds/Transparent/AlphaClipRim" {
             #pragma exclude_renderers xbox360 ps3 flash d3d11_9x 
             #pragma target 3.0
             #ifndef LIGHTMAP_OFF
-                float4 unity_LightmapST;
-                sampler2D unity_Lightmap;
+                // float4 unity_LightmapST;
+                // sampler2D unity_Lightmap;
                 #ifndef DIRLIGHTMAP_OFF
-                    sampler2D unity_LightmapInd;
+                    // sampler2D unity_LightmapInd;
                 #endif
             #endif
             uniform sampler2D _Difuse; uniform float4 _Difuse_ST;
@@ -106,10 +112,10 @@ Shader "ManyWorlds/Transparent/AlphaClipRim" {
                 float4 node_12 = tex2D(_AlphaMap,TRANSFORM_TEX(node_168.rg, _AlphaMap));
                 clip(node_12.a - 0.5);
                 #ifndef LIGHTMAP_OFF
-                    float4 lmtex = tex2D(unity_Lightmap,i.uvLM);
+                    float4 lmtex = UNITY_SAMPLE_TEX2D(unity_Lightmap,i.uvLM);
                     #ifndef DIRLIGHTMAP_OFF
                         float3 lightmap = DecodeLightmap(lmtex);
-                        float3 scalePerBasisVector = DecodeLightmap(tex2D(unity_LightmapInd,i.uvLM));
+                        float3 scalePerBasisVector = DecodeLightmap(UNITY_SAMPLE_TEX2D_SAMPLER(unity_LightmapInd,unity_Lightmap,i.uvLM));
                         UNITY_DIRBASIS
                         half3 normalInRnmBasis = saturate (mul (unity_DirBasis, normalLocal));
                         lightmap *= dot (normalInRnmBasis, scalePerBasisVector);
@@ -188,10 +194,10 @@ Shader "ManyWorlds/Transparent/AlphaClipRim" {
             #pragma exclude_renderers xbox360 ps3 flash d3d11_9x 
             #pragma target 3.0
             #ifndef LIGHTMAP_OFF
-                float4 unity_LightmapST;
-                sampler2D unity_Lightmap;
+                // float4 unity_LightmapST;
+                // sampler2D unity_Lightmap;
                 #ifndef DIRLIGHTMAP_OFF
-                    sampler2D unity_LightmapInd;
+                    // sampler2D unity_LightmapInd;
                 #endif
             #endif
             uniform sampler2D _Difuse; uniform float4 _Difuse_ST;
@@ -290,10 +296,10 @@ Shader "ManyWorlds/Transparent/AlphaClipRim" {
             #pragma exclude_renderers xbox360 ps3 flash d3d11_9x 
             #pragma target 3.0
             #ifndef LIGHTMAP_OFF
-                float4 unity_LightmapST;
-                sampler2D unity_Lightmap;
+                // float4 unity_LightmapST;
+                // sampler2D unity_Lightmap;
                 #ifndef DIRLIGHTMAP_OFF
-                    sampler2D unity_LightmapInd;
+                    // sampler2D unity_LightmapInd;
                 #endif
             #endif
             uniform sampler2D _AlphaMap; uniform float4 _AlphaMap_ST;
@@ -340,10 +346,10 @@ Shader "ManyWorlds/Transparent/AlphaClipRim" {
             #pragma exclude_renderers xbox360 ps3 flash d3d11_9x 
             #pragma target 3.0
             #ifndef LIGHTMAP_OFF
-                float4 unity_LightmapST;
-                sampler2D unity_Lightmap;
+                // float4 unity_LightmapST;
+                // sampler2D unity_Lightmap;
                 #ifndef DIRLIGHTMAP_OFF
-                    sampler2D unity_LightmapInd;
+                    // sampler2D unity_LightmapInd;
                 #endif
             #endif
             uniform sampler2D _AlphaMap; uniform float4 _AlphaMap_ST;
